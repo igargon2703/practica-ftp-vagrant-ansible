@@ -1,0 +1,16 @@
+$TTL    86400
+@   IN  SOA ns1.ignacio.test. root.ignacio.test. (
+        2026030901 ; Serial
+        3600       ; Refresh
+        1800       ; Retry
+        604800     ; Expire
+        86400 )    ; Minimum TTL
+
+@   IN  NS  ns1.ignacio.test.
+
+ns1    IN  A   192.168.57.5
+ansible IN  A   192.168.57.6
+negocio IN  A   192.168.57.7
+
+www    IN  CNAME   negocio.ignacio.test.
+ftp    IN  CNAME   negocio.ignacio.test.

@@ -1,0 +1,13 @@
+$TTL    86400
+@   IN  SOA ns1.ignacio.test. root.ignacio.test. (
+        2026030901 ; Serial
+        3600       ; Refresh
+        1800       ; Retry
+        604800     ; Expire
+        86400 )    ; Minimum TTL
+
+@   IN  NS  ns1.ignacio.test.
+
+5   IN  PTR dns.ignacio.test.
+6   IN  PTR ansible.ignacio.test.
+7   IN  PTR negocio.ignacio.test.
